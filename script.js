@@ -48,6 +48,10 @@ To get the width, try .getBoundingClientRect() or .offsetWidth.
 
 */
 
+const slideCount = galleryItems.length;
+
+const slideWidth = galleryItems[0].offsetWidth;
+
 
 
 /*
