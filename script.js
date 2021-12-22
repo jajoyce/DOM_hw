@@ -75,6 +75,10 @@ Create a function called transitionSlide that, for now, just
 
 */
 
+let transitionSlide = () => setInterval( () => console.log("Called!"), 5000);
+
+transitionSlide();
+
 
 
 /*
