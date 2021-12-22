@@ -24,6 +24,10 @@ Hint: you can call .querySelector on a node you've already retrieved from the DO
 
 */
 
+const gallery = document.querySelector('.js-gallery');
+
+const galleryItems = gallery.querySelectorAll('.js-gallery-item');
+
 
 
 /*
