@@ -75,9 +75,9 @@ Create a function called transitionSlide that, for now, just
 
 */
 
-let transitionSlide = () => setInterval( () => console.log("Called!"), 5000);
+// let transitionSlide = () => setInterval( () => console.log("Called!"), 5000);
 
-transitionSlide();
+// transitionSlide();
 
 
 
@@ -103,3 +103,17 @@ Inside transitionSlide() we need to do two things:
 Hint: delta should always be a negative number
 
 */
+
+let currentSlide = 1;
+
+function transitionSlide () {
+  if (currentSlide < slideCount) {
+    gallery.style.transform = `translateX(${- slideWidth * currentSlide}px)`;
+    currentSlide ++;
+  } else {
+    gallery.style.transform = 'translateX(0)';
+    currentSlide = 1;
+  }
+}
+
+setInterval(transitionSlide, 5000);
